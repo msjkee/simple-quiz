@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="video">
+            <video autoplay muted loop id="background-video">
+                <source src="images/background_video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="play">
+            <button type="button" id="play-btn">?</button>
+        </div>
+
+        <div id="quiz-container">
+            <div id="macbook-style-title-bar">
+                <div id="dots">
+                    <span id="red"></span>
+                    <span id="yellow"></span>
+                    <span id="green"></span>
+                </div>
+                <hr id="line-mac-style">
+            </div>
+
+            <header>
+                <h1>
+                    <a href="index.html"><img src="images/griffith_logo.png"></a>
+                </h1>
+            </header>
+
+            <hr class="line">
+
+            <main>
+                <section id="introduction">
+                    <h2 id="introduction-header">Welcome to the Interactive Quiz!</h2>
+                    <div id="input-box">
+                        <label for="name">Enter your name:</label>
+                        <input id="name" type="text">
+                    </div>
+                    <div id="quiz" style="display: none">
+                        <div id="quiz-content">
+                            <h2 id="quiz-question"></h2>
+                            <div id="options"></div>
+                        </div>
+                        <div>
+                            <button type="button" id="previousQuestion">Previous</button>
+                            <button type="button" id="nextQuestion">Next</button>
+                        </div>
+
+                    </div>
+                    <button type="button" id="startBtn">Start Quiz</button>
+                </section>
+
+                <section id="feedback">
+                    <h2 id="result" style="display: none">Well done! Your Quiz is finished now! </h2>
+                </section>
+            </main>
+
+            <footer id="footer">
+                <p>Quiz by: Stukalov Mikhail Vadimovich, 3137193, mikhail.stukalov@student.griffith.ie</p>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
